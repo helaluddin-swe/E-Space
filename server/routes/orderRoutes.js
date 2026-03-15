@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { createOrder, updateOrderToPaid } = require('../controllers/orderController');
+const { createOrder, updateOrderToPaid } = require('../controllers/orderController.js');
 
 router.post('/', createOrder);
 router.put('/:id/pay', updateOrderToPaid);

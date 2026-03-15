@@ -2,7 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
 const connectDB = require('./config/db');
-const orderRoutes = require('./routes/orderRoutes');
+// const orderRoutes = require('./routes/orderRoutes');
 
 dotenv.config();
 connectDB();
@@ -14,7 +14,7 @@ app.use(cors({origin:["http://localhost:3000",""],"credentials":true})); // Allo
 app.use(express.json());
 
 // Routes
-app.use('/api/orders', orderRoutes);
+// app.use('/api/orders', orderRoutes);
 
 // Health Check
 app.get('/', (req, res) => {

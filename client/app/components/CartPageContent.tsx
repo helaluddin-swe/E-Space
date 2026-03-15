@@ -23,6 +23,7 @@ const CartPageContent = () => {
     address: "",
     district: "",
     postalCode: "",
+    city:""
   });
 
   useEffect(() => {

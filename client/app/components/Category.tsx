@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { categoryData } from "../utils/categoryData";
+import { categoryData, CategoryType } from "../utils/categoryData";
 
 const Category = () => {
   const [categories, setCategories] = useState<CategoryType[]>([]);
